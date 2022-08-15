@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="252dp"
-        android:layout_height="68dp"
+        android:layout_width="277dp"
+        android:layout_height="85dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Delevering groceries  under 15 minutes"
