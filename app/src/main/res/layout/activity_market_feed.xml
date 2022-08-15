@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketFeed">
+
+
+       <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="29dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_shopping_cart1" />
+
+    <TextView
+        android:id="@+id/textViewSkip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="See all"
+        android:textAlignment="center"
+        android:textColor="#FFCD41"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Fresh vegtables"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="343dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_mango"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/mango" />
+
+            <TextView
+                android:id="@+id/tv_mango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_mango"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Mango"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mango"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$30.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mango"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/white_bg"
+                android:elevation="10dp"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_banana"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/banana" />
+
+            <TextView
+                android:id="@+id/tv_banana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_banana"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="cooliflower"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_banana"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$20.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_banana"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/white_bg"
+                android:elevation="10dp"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_apple"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/apple" />
+
+            <TextView
+                android:id="@+id/tv_apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_apple"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Apple"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_apple"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$17.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_apple"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="13dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_bg"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewFruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="See all"
+        android:textAlignment="center"
+        android:textColor="#FFCD41"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+    <TextView
+        android:id="@+id/skip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Fresh fruits"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="343dp"
+        android:gravity="center"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_cooliflower"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/carlifower" />
+
+            <TextView
+                android:id="@+id/tv_cooliflower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_cooliflower"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="cooliflower"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cooliflower"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$20.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_cooliflower"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/white_bg"
+                android:elevation="10dp"
+
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_onion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/onion" />
+
+            <TextView
+                android:id="@+id/tv_onion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_onion"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Onions"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_onion"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$17.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_onion"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/white_bg"
+                android:elevation="10dp"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/veg_bg">
+
+            <ImageView
+                android:id="@+id/img_egggplant"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/eggplant" />
+
+            <TextView
+                android:id="@+id/tv_eggplant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_egggplant"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Eggplant"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_eggplant"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$16.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_eggplant"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="7dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_bg"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBakery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="See all"
+        android:textAlignment="center"
+        android:textColor="#FFCD41"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toEndOf="@+id/skip2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    <TextView
+        android:id="@+id/skip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Baakery Products"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="343dp"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/dairy_bg">
+
+            <ImageView
+                android:id="@+id/img_bread"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/bread" />
+
+            <TextView
+                android:id="@+id/tv_bread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_bread"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Bread"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bread"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$5.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bread"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="13dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_bg"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/dairy_bg">
+
+            <ImageView
+                android:id="@+id/img_egg"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/egg" />
+
+            <TextView
+                android:id="@+id/tv_egg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_egg"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Eggs"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_egg"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$6.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_egg"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="13dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_bg"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/dairy_bg">
+
+            <ImageView
+                android:id="@+id/img_butter"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/butter" />
+
+            <TextView
+                android:id="@+id/tv_butter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_butter"
+                android:layout_marginLeft="14dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Butter"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_butter"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="$20.00"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_butter"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="13dp"
+                android:elevation="10dp"
+                android:background="@drawable/white_bg"
+                android:src="@drawable/ic_round_add" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
